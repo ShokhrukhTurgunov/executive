@@ -538,7 +538,7 @@ body{
 }
 .events-section__sub-span{
     display: inline-block; 
-    margin-left: 170px;
+    margin-left: 80px;
     font-weight: 900;
     font-size: 16px;
     line-height: 28px;
@@ -611,7 +611,8 @@ body{
 .countries-section__uk-item::before{
     background-image: url("/img/study-in-united-kingdom.png");
 }
-.countries-section__sub-title{
+.countries-section__link{
+    text-decoration: none;
     font-weight: 900;
     font-size: 25px;
     line-height: 29px;
