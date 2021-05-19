@@ -44,7 +44,7 @@ body{
     width: 1px;
     height: 1px;
     margin: -1px;
-  }
+}
 .container{
     max-width: 1180px;
     margin: 0 auto;
@@ -94,10 +94,17 @@ body{
     width: 100%;
     transition: width .3s;
 }
+.site-header__toggler{
+    display: none;
+}
 .apply-link{
     padding: 10px 33px;
     border: 2px solid #717CFF;
     border-radius: 11px;
+}
+.apply-link:hover{
+    background-color: #717CFF;
+    color: #FFFFFF;
 }
 
 
@@ -139,8 +146,8 @@ body{
     padding: 12px 0;
     padding-left: 34px;
     text-decoration: none;
-    background: #717CFF;
-    background-image: url(/img/arrow-right.svg);
+    background-color: #717CFF;
+    background-image: url("/img/arrow-right.svg");
     background-repeat: no-repeat;
     background-position: 200px center;
     border-radius: 11px;
@@ -149,7 +156,13 @@ body{
     font-size: 22px;
     line-height: 40px;
     color: #FFFFFF;
+    border: 2px solid #717CFF;
     cursor: pointer;
+}
+.apply-online-link:hover{
+    background-color: #FFFFFF;
+    border: 2px solid #717CFF;
+    color: #000;
 }
 .networks-list{
     display: flex;
@@ -421,9 +434,18 @@ body{
     justify-content: space-between;
     padding: 12px 34px;
     text-decoration: none;
-    background: #717CFF;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    background-color: #717CFF;
+    border: 2px solid #717CFF;
     border-radius: 11px;
     color: #FFFFFF;
+}
+.news-join-link:hover{
+    color: #000;
+    background-color: #FFFFFF;
+    border: 2px solid #717CFF;
 }
 .news-join-link::after{
     content: "";
@@ -721,7 +743,13 @@ body{
     font-size: 22px;
     line-height: 40px;
     color: #FFFFFF;
+    border: 2px solid #717CFF;
     cursor: pointer;
+}
+.apply-section__link:hover{
+    color: #000;
+    background-color: #FFFFFF;
+    border: 2px solid #717CFF;
 }
 
 
@@ -766,6 +794,9 @@ body{
     line-height: 49px;
     color: #EEEEEE;
 }
+.about-section__link:hover{
+    text-decoration: underline;
+}
 .disclaimer-section__list{
     list-style: none;
     margin: 0;
@@ -778,6 +809,9 @@ body{
     line-height: 49px;
     color: #EEEEEE;
 }
+.disclaimer-section__link:hover{
+    text-decoration: underline;
+}
 .site-footer__network-section{
     margin: 0;
     margin-top: auto;
@@ -786,9 +820,310 @@ body{
     padding-bottom: 30px;
 }
 
-  .slick-slide {
+.slick-slide {
     display: flex;
     align-items: center;
     width: 400px;
     margin-right: 180px;
-  }
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    
+    .header-container{
+        margin-bottom: 40px;
+    }
+    
+    .site-nav{
+        margin-left: 60px;
+        white-space: normal;
+    }
+    
+    .sitenav-item:not(:last-child){
+        margin-right: 20px;
+    }
+    
+    .sitenav-link{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    .apply-link{
+        padding: 5px 15px;
+    }
+    
+    .top-section{
+        padding-top: 450px;
+        background-image: url("/img/student-center.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: calc(50% ) top;
+    }
+    
+    .top-section-container{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .top-section-title,
+    .top-section-text,
+    .apply-online-link{
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    
+    .apply-online-link{
+        width: 220px;
+    }
+    
+    .networks-list{
+        margin: 0 auto;
+    }
+    
+    .services-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .services-item:not(:last-child){
+        margin-right: 20px;
+    }
+    
+    .services-text,
+    .news-section-text,
+    .events-section__text,
+    .countries-section__text,
+    .testimonial-section__text
+    {
+        max-width: 632px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    .services-section,
+    .news-section,
+    .events-section,
+    .countries-section,
+    .testimonial-section{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .services-item{
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .services-item:nth-child(2),
+    .services-item:nth-child(4){
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    
+    .news-list{
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    
+    .news-item:not(:last-child){
+        margin-bottom: 30px;
+    }
+    
+    .regrow-item{
+        margin: 0 auto;
+    }
+    
+    .events-section__list{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .container {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .site-header__toggler{
+        display: block;
+        margin-left: auto;
+        padding: 5px 10px;
+        border: 1px solid #2F2F2F;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        color: #2F2F2F;
+        cursor: pointer;
+    }
+
+    .site-header__toggler:active{
+        background-color: #2F2F2F;
+        color: #FFFFFF;
+    }
+    
+    .sitenav-list{
+        transition: transform 0.3s ease;
+        z-index: 99;
+        position: fixed;
+        top: 4%;
+        left: -20%;
+        bottom: 0;
+        width: 33%;
+        height: 35%;
+        padding-top: 14px;
+        padding-left: 10px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        background-color: #333A44;
+        border-radius: 5px;
+        transform: translateX(300px);
+    }
+    .site-nav--open{
+        z-index: 99;
+        transform: translateX(800px);
+    }
+    
+    .sitenav-link{
+        display: block;
+        text-align: center;
+        color: #FAFAFA;
+    }
+    .top-section{
+        padding-top: 250px;
+        background-image: url("/img/student-center.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: calc(50% ) top;
+    }
+    
+    .top-section-title,
+    .services-title,
+    .news-section-title,
+    .events-section__title,
+    .countries-secion__title,
+    .testimonial-section__title{
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 25px;
+    }
+    
+    .top-section-text,
+    .testimonial-section__text,
+    .countries-section__text,
+    .events-section__text,
+    .news-section-text,
+    .services-text
+    {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .apply-online-link,
+    .apply-section__link{
+        max-width: 150px;
+        padding: 5px 0;
+        padding-left: 15px;
+        background-position: 120px center;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    .services-section,
+    .news-section,
+    .events-section,
+    .countries-section,
+    .testimonial-section,
+    .apply-section{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .services-item:nth-child(1),
+    .services-item:nth-child(3){
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .events-section__list,
+    .testimonial-section__list{
+        max-width: 311px;
+        padding: 0 10px;
+    }
+    
+    .events-section__item{
+        padding: 0;
+    }
+    
+    .events-section__sub-title,
+    .testimonial-section-sub-box{
+        max-width: 210px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .events-section__sub-text{
+        max-width: 290px;
+        text-align: center;
+    }
+    
+    .events-section__link{
+        display: inline-flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    .events-section__link::after{
+        width: 24px;
+        height: 20px;
+    }
+    .events-section__sub-span{
+        margin-left: 10px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .events-section__sub-span::before{
+        background-size: contain;
+        background-position: center 4px;
+    }
+    
+    .countries-section__link{
+        display: block;
+        text-align: center;
+    }
+    .countries-section__sub-text{
+        text-align: center;
+    }
+    
+    .testimonial-section__sub-text{
+        max-width: 260px;
+        text-align: center;
+    }
+    
+    .apply-section__container{
+        flex-direction: column;
+    }
+    
+    .apply-section__text{
+        margin-top: 0;
+        text-align: center;
+        font-size: 34px;
+        line-height: 39px;
+    }
+
+    .site-footer{
+        padding: 0;
+    }
+    .site-footer__about-section{
+        display: none;
+    }
+} 
