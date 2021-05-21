@@ -835,6 +835,7 @@ body{
         max-width: 768px;
         margin: 0 auto;
         padding: 0 30px;
+        overflow-x: hidden;
     }
     
     .header-container{
@@ -950,6 +951,7 @@ body{
     .container {
         margin: 0 auto;
         padding: 0 15px;
+        overflow-x: hidden;
     }
 
     .site-header__toggler{
